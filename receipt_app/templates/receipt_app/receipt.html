@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+  <body>
+          <div>ООО КОМПАНИЯ</div>
+          <div>Добро пожаловать</div>
+          <div>ККМ 00075164 #3969</div>
+          <div>ИНН 1087746942040</div>
+          <div>ЭКЛЗ 3851495566</div>
+          <div>{{ datetime|date:"d.m.Y G:i" }} СИС.</div>
+          <div>AДМИ</div>
+          {% for item in items %}
+          <p>{{ item.title }}</p>
+          <p>{{ item.amount }} = {{ item.cost }}</p>
+          <p>------------------------------------</p>
+          {% endfor %}
+          <div>ИТОГ {{ total }}</div>
+          <div>НАЛИЧНЫМИ = {{ total }}</div>
+          <div>***********************</div>
+          <div> 00003751# 05970 {{ url }}</div>
+  </body>
+</html>
